@@ -31,10 +31,8 @@ for linha in pagina_clientes.iter_rows(min_row=2): # iter_rows, percorre por tod
         link_mensagem_whatsapp = f'https://web.whatsapp.com/send?phone={numero}&text={quote(mensagem)}'
         webbrowser.open(link_mensagem_whatsapp)
         sleep(8)
-        pyautogui.click(x=1851, y=964)
-        sleep(3)
-
         # imagem
+        sleep(2)
         pyautogui.click(x=765, y=965)
         sleep(2)
         pyautogui.click(x=854, y=710)
